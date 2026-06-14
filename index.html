@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terraplan Consultants Limited | Geospatial Engineering & Sustainable Urban Planning</title>
     
+    <!-- TAB FAVICON: UPDATED FOR THE NEW PNG IMAGE EXTENSION -->
     <link rel="icon" type="image/png" href="logo1.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +64,7 @@
             background: var(--accent);
         }
 
-        /* NAVIGATION: REMOVED TRANSPREGENCY & BLUR FILTERS FOR SOLID INTERFACE */
+        /* NAVIGATION: REMOVED TRANSPARENCY & BLUR FILTERS FOR SOLID INTERFACE */
         nav {
             position: fixed;
             top: 0;
@@ -87,6 +88,12 @@
             align-items: center;
             gap: 12px;
             color: var(--text-light);
+        }
+
+        .nav-logo img {
+            height: 45px;
+            width: auto;
+            object-fit: contain;
         }
 
         .nav-logo span {
@@ -461,8 +468,11 @@
 </head>
 <body>
 
+    <!-- NAVIGATION BAR -->
     <nav>
         <a href="#hero" class="nav-logo">
+            <!-- NATIVE TRANPARENT LOGO IMAGE INSERTED IN VIEW WITHOUT BLEND Hurdles -->
+            <img src="logo1.png" alt="Terraplan Consultants Limited Logo">
             TERRAPLAN<span> CONSULTANTS</span>
         </a>
         <ul class="nav-links">
@@ -474,10 +484,12 @@
         </ul>
     </nav>
 
+    <!-- FLOATING WHATSAPP INTERACTIVE TRIGGER -->
     <a href="https://wa.me/2348066916130" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="WhatsApp Chat">
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- HERO DISPLAY WELCOME HEADER -->
     <header id="hero">
         <p class="hero-tag" data-aos="fade-up">Welcome to Terraplan Consultants</p>
         <h1 data-aos="fade-up" data-aos-delay="100">TERRAPLAN CONSULTANTS LIMITED.</h1>
@@ -493,6 +505,7 @@
         </div>
     </header>
 
+    <!-- 01. ABOUT MISSION STATEMENT -->
     <section id="about">
         <h2 class="section-title" data-aos="fade-right"><span>01.</span> Enterprise Profile</h2>
         <div class="about-content">
@@ -520,6 +533,7 @@
         </div>
     </section>
 
+    <!-- 02. CORE EXPERTISE MATRIX -->
     <section id="expertise">
         <h2 class="section-title" data-aos="fade-right"><span>02.</span> Technical Capabilities</h2>
         <div class="grid-container">
@@ -550,9 +564,11 @@
         </div>
     </section>
 
+    <!-- 03. CONSULTANCY PORTFOLIOS -->
     <section id="projects">
         <h2 class="section-title" data-aos="fade-right"><span>03.</span> Featured Consultancy Portfolios</h2>
         <div class="grid-container">
+            <!-- Project 1 -->
             <div class="card" data-aos="fade-up">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-file-signature"></i></div>
@@ -561,6 +577,7 @@
                 </div>
                 <div class="card-tag">Land Administration</div>
             </div>
+            <!-- Project 2 -->
             <div class="card" data-aos="fade-up" data-aos-delay="100">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-virus-covid"></i></div>
@@ -569,6 +586,7 @@
                 </div>
                 <div class="card-tag">Public Health GIS</div>
             </div>
+            <!-- Project 3 -->
             <div class="card" data-aos="fade-up" data-aos-delay="200">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-gas-pump"></i></div>
@@ -577,6 +595,7 @@
                 </div>
                 <div class="card-tag">Compliance Frameworks</div>
             </div>
+            <!-- Project 4 -->
             <div class="card" data-aos="fade-up">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-seedling"></i></div>
@@ -585,6 +604,7 @@
                 </div>
                 <div class="card-tag">Environmental Analytics</div>
             </div>
+            <!-- Project 5 -->
             <div class="card" data-aos="fade-up" data-aos-delay="100">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-oil-well"></i></div>
@@ -593,6 +613,7 @@
                 </div>
                 <div class="card-tag">Energy Asset Logistics</div>
             </div>
+            <!-- Project 6 -->
             <div class="card" data-aos="fade-up" data-aos-delay="200">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-road"></i></div>
@@ -604,6 +625,7 @@
         </div>
     </section>
 
+    <!-- 04. FEEDBACK / TESTIMONIALS -->
     <section id="testimonials">
         <h2 class="section-title" data-aos="fade-right"><span>04.</span> Enterprise Testimonials</h2>
         <div class="testimonial-container">
@@ -632,6 +654,7 @@
         </div>
     </section>
 
+    <!-- 05. CONNECT / CONTACT FORM -->
     <section id="contact" data-aos="fade-up">
         <h2 class="section-title" style="justify-content: center;"><span>05.</span> Initialize a Consultation</h2>
         <p>
@@ -645,6 +668,7 @@
         </div>
     </section>
 
+    <!-- FOOTER SOCIAL ATTRIBUTION -->
     <footer>
         <div class="social-links">
             <a href="https://web.facebook.com/Yusufyakubuyusuf" target="_blank" aria-label="Facebook">
@@ -663,6 +687,7 @@
         <p>&copy; 2026 Terraplan Consultants Limited. Planning today, for tomorrow.</p>
     </footer>
 
+    <!-- INTERACTIVE ANIMATION ENGINE SCRIPTS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
